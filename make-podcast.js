@@ -25,12 +25,12 @@ const formatDuration = (duration) => {
   return [hours, minutes, seconds].map((v) => (v < 10 ? "0" + v : v)).join(":");
 };
 
-// Function to read episode description from a text file
-const getEpisodeDescription = (filePath) => {
-  if (fs.existsSync(filePath)) {
-    return fs.readFileSync(filePath, "utf8");
+// Function to read or create episode description from a text file
+const getOrCreateEpisodeDescription = (filePath) => {
+  if (!fs.existsSync(filePath)) {
+    fs.writeFileSync(filePath, ""); // Create an empty text file if it doesn't exist
   }
-  return ""; // Return an empty string if the description file does not exist
+  return fs.readFileSync(filePath, "utf8");
 };
 
 // Function to create podcast XML
@@ -61,32 +61,26 @@ const createPodcastXML = async () => {
       const episodeUrl = `https://github.com/zleach/rtr/raw/main/${encodedFileName}`; // URL for each episode
 
       const descriptionFilePath = path.join(inputFolder, episodeTitle + ".txt");
-      const episodeDescription = getEpisodeDescription(descriptionFilePath);
+      const episodeDescription =
+        getOrCreateEpisodeDescription(descriptionFilePath);
 
       const pubDate = new Date(); // Just a placeholder, modify as needed
 
       episodes.push({
-        item: {
-          title: episodeTitle,
-          "itunes:title": episodeTitle,
-          "itunes:episode": episodes.length + 1,
-          description: {
-            $: {
-              type: "html",
-            },
-            _: `<![CDATA[${episodeDescription}]]>`,
+        title: episodeTitle,
+        "itunes:title": episodeTitle,
+        "itunes:episode": episodes.length + 1,
+        description: `<![CDATA[${episodeDescription}]]>`,
+        enclosure: {
+          $: {
+            url: episodeUrl,
+            length: fileSize.toString(),
+            type: "audio/mpeg",
           },
-          enclosure: {
-            $: {
-              url: episodeUrl,
-              length: fileSize.toString(),
-              type: "audio/mpeg",
-            },
-          },
-          guid: episodeUrl,
-          pubDate: pubDate.toUTCString(),
-          "itunes:duration": formattedDuration,
         },
+        guid: episodeUrl,
+        pubDate: pubDate.toUTCString(),
+        "itunes:duration": formattedDuration,
       });
     }
 
