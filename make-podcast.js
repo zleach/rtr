@@ -25,6 +25,14 @@ const formatDuration = (duration) => {
   return [hours, minutes, seconds].map((v) => (v < 10 ? "0" + v : v)).join(":");
 };
 
+// Function to read episode description from a text file
+const getEpisodeDescription = (filePath) => {
+  if (fs.existsSync(filePath)) {
+    return fs.readFileSync(filePath, "utf8");
+  }
+  return ""; // Return an empty string if the description file does not exist
+};
+
 // Function to create podcast XML
 const createPodcastXML = async () => {
   try {
@@ -52,6 +60,9 @@ const createPodcastXML = async () => {
       const encodedFileName = encodeURIComponent(file);
       const episodeUrl = `https://github.com/zleach/rtr/raw/main/${encodedFileName}`; // URL for each episode
 
+      const descriptionFilePath = path.join(inputFolder, episodeTitle + ".txt");
+      const episodeDescription = getEpisodeDescription(descriptionFilePath);
+
       const pubDate = new Date(); // Just a placeholder, modify as needed
 
       episodes.push({
@@ -59,6 +70,7 @@ const createPodcastXML = async () => {
           title: episodeTitle,
           "itunes:title": episodeTitle,
           "itunes:episode": episodes.length + 1,
+          description: episodeDescription,
           enclosure: {
             $: {
               url: episodeUrl,
@@ -73,6 +85,7 @@ const createPodcastXML = async () => {
       });
     }
 
+    const builder = new xml2js.Builder({ cdata: true });
     const podcast = {
       rss: {
         $: {
@@ -96,7 +109,6 @@ const createPodcastXML = async () => {
       },
     };
 
-    const builder = new xml2js.Builder();
     const xml = builder.buildObject(podcast);
 
     fs.writeFileSync("podcast.xml", xml);
