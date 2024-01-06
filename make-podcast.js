@@ -70,7 +70,12 @@ const createPodcastXML = async () => {
           title: episodeTitle,
           "itunes:title": episodeTitle,
           "itunes:episode": episodes.length + 1,
-          "itunes:description": episodeDescription,
+          description: {
+            $: {
+              type: "html",
+            },
+            _: `<![CDATA[${episodeDescription}]]>`,
+          },
           enclosure: {
             $: {
               url: episodeUrl,
@@ -85,7 +90,6 @@ const createPodcastXML = async () => {
       });
     }
 
-    const builder = new xml2js.Builder({ cdata: true });
     const podcast = {
       rss: {
         $: {
@@ -109,6 +113,7 @@ const createPodcastXML = async () => {
       },
     };
 
+    const builder = new xml2js.Builder();
     const xml = builder.buildObject(podcast);
 
     fs.writeFileSync("podcast.xml", xml);
