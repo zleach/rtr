@@ -12,7 +12,7 @@ As Emily navigates the legal and emotional complexities of her decision, she is 
 		<link>https://zachleach.substack.com/podcast</link>
 		<generator>Substack</generator>
 		<lastBuildDate>Sat, 06 Jan 2024 05:27:25 GMT</lastBuildDate>
-		<atom:link href="https://api.substack.com/feed/podcast/315961.rss" rel="self" type="application/rss+xml"/>
+		<atom:link href="https://raw.githubusercontent.com/zleach/rtr/main/podcast-final.xml" rel="self" type="application/rss+xml"/>
 		<author>
 			<![CDATA[Zachary Leach]]>
 		</author>
@@ -25,7 +25,7 @@ As Emily navigates the legal and emotional complexities of her decision, she is 
 		<webMaster>
 			<![CDATA[zachleach@substack.com]]>
 		</webMaster>
-		<itunes:new-feed-url>https://api.substack.com/feed/podcast/315961.rss</itunes:new-feed-url>
+		<itunes:new-feed-url>https://raw.githubusercontent.com/zleach/rtr/main/podcast-final.xml</itunes:new-feed-url>
 		<itunes:author>Zachary Leach</itunes:author>
 		<itunes:subtitle>Short stories from a forgotten and faded world.</itunes:subtitle>
 		<itunes:type>episodic</itunes:type>
