@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<rss
-	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
-	<channel>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
 		<title>
 			<![CDATA[The Right to Retribution]]>
 		</title>
@@ -40,17 +39,15 @@ As Emily navigates the legal and emotional complexities of her decision, she is 
 		<itunes:category text="Arts">
 			<itunes:category text="Books"/></itunes:category>
 		<itunes:image href="https://substackcdn.com/feed/podcast/315961/24336eb9f3b78de1060cb878c18b176d.jpg"/>
-	</channel>
-	<item>
-		<item>
-			<title>Chapter 1</title>
-			<itunes:title>Chapter 1</itunes:title>
-			<itunes:episode>1</itunes:episode>
-			<description><![CDATA[In the heart of Texas, where the echoes of frontier justice still resonate beneath the vast, azure sky, Emily Jernigan grapples with a power that is as formidable as it is unsettling—the newly sanctified American right to exact legally sanctioned retribution. As an English teacher, she bears the burden of educating youth on the stark ramifications of such a law, while in the privacy of her own life, she is ensnared in the labyrinth of a moral quandary, where the lines of vengeance and justice blur. Through a landscape punctuated by the unyielding thrum of high school academia, the intimacy of marriage, and the spectral silence of a childhood wrought with memories, Emily navigates a path strewn with the gravitas of choice, the weight of untold secrets, and the plaintive yearning for a peace that seems as elusive as the whispering prairie winds.]]></description>
-			<enclosure url="https://github.com/zleach/rtr/raw/main/Chapter%201.mp3" length="16489382" type="audio/mpeg"/>
-			<guid>https://github.com/zleach/rtr/raw/main/Chapter%201.mp3</guid>
-			<pubDate>Sat, 06 Jan 2024 07:00:30 GMT</pubDate>
-			<itunes:duration>00:17:10</itunes:duration>
-		</item>
-	</item>
-</channel>undefined</rss>
+      <item>
+        <title>Chapter 1</title>
+        <itunes:title>Chapter 1</itunes:title>
+        <itunes:episode>1</itunes:episode>
+        <description type="html"><![CDATA[In the heart of Texas, where the echoes of frontier justice still resonate beneath the vast, azure sky, Emily Jernigan grapples with a power that is as formidable as it is unsettling—the newly sanctified American right to exact legally sanctioned retribution. As an English teacher, she bears the burden of educating youth on the stark ramifications of such a law, while in the privacy of her own life, she is ensnared in the labyrinth of a moral quandary, where the lines of vengeance and justice blur. Through a landscape punctuated by the unyielding thrum of high school academia, the intimacy of marriage, and the spectral silence of a childhood wrought with memories, Emily navigates a path strewn with the gravitas of choice, the weight of untold secrets, and the plaintive yearning for a peace that seems as elusive as the whispering prairie winds.]]></description>
+        <enclosure url="https://github.com/zleach/rtr/raw/main/Chapter%201.mp3" length="16489382" type="audio/mpeg"/>
+        <guid>https://github.com/zleach/rtr/raw/main/Chapter%201.mp3</guid>
+        <pubDate>Sat, 06 Jan 2024 07:09:11 GMT</pubDate>
+        <itunes:duration>00:17:10</itunes:duration>
+      </item>
+  </channel>
+</rss>
