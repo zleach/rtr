@@ -70,7 +70,7 @@ const createPodcastXML = async () => {
           title: episodeTitle,
           "itunes:title": episodeTitle,
           "itunes:episode": episodes.length + 1,
-          description: episodeDescription,
+          "itunes:description": episodeDescription,
           enclosure: {
             $: {
               url: episodeUrl,

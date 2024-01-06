@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+	<channel>
+		<title>
+			<![CDATA[The Right to Retribution]]>
+		</title>
+		<description>
+			<![CDATA[Mason County Texas, is a novel that delves into the complexities of justice, morality, and the human capacity for forgiveness. Set against the backdrop of the controversial and fictional 30th Amendment to the United States Constitution, which allows citizens the right to lawfully request the termination of one individual's life, the story follows Emily Jernigan, a high school English teacher in Austin, Texas, whose moral convictions are put to the ultimate test. Her world is shattered when Hannah is killed, and she faces a moral and ethical dilemma when David is acquitted. Emily's decision to invoke the amendment propels her into uncharted waters, testing her values and exposing the rifts in her family and community. Emily is supported by her husband, Wade, who offers steadfast love, her best friend, Claire Adams, a lawyer who opposes Emily's choice but remains loyally by her side, and her father, Joe Rawlings, a man of integrity who fears for his daughter's soul.<br/><br/>
+
+As Emily navigates the legal and emotional complexities of her decision, she is confronted by a groundswell of opposition, including smear campaigns and societal ostracism. David Rutledge's own machinations to paint Emily as the villain exacerbate her turmoil. She also must contend with revelations of a flawed approval process for her application to invoke the amendment, leading to a crisis of conscience. Throughout her journey, Emily is forced to question the very foundations of justice and retaliation, and her own capacity for forgiveness. This is mirrored in her interactions with David, who reveals his own trauma and suffering, challenging Emily's views on what constitutes just punishment. <br/><br/><a href="https://zachleach.substack.com?utm_medium=podcast">zachleach.substack.com</a>]]>
+		</description>
+		<link>https://zachleach.substack.com/podcast</link>
+		<generator>Substack</generator>
+		<lastBuildDate>Sat, 06 Jan 2024 05:27:25 GMT</lastBuildDate>
+		<atom:link href="https://api.substack.com/feed/podcast/315961.rss" rel="self" type="application/rss+xml"/>
+		<author>
+			<![CDATA[Zachary Leach]]>
+		</author>
+		<copyright>
+			<![CDATA[Zach Leach]]>
+		</copyright>
+		<language>
+			<![CDATA[en]]>
+		</language>
+		<webMaster>
+			<![CDATA[zachleach@substack.com]]>
+		</webMaster>
+		<itunes:new-feed-url>https://api.substack.com/feed/podcast/315961.rss</itunes:new-feed-url>
+		<itunes:author>Zachary Leach</itunes:author>
+		<itunes:subtitle>Short stories from a forgotten and faded world.</itunes:subtitle>
+		<itunes:type>episodic</itunes:type>
+		<itunes:owner>
+			<itunes:name>Zachary Leach</itunes:name>
+			<itunes:email>zachleach@substack.com</itunes:email>
+		</itunes:owner>
+		<itunes:explicit>Yes</itunes:explicit>
+		<itunes:category text="Fiction">
+			<itunes:category text="Drama"/></itunes:category>
+		<itunes:category text="Arts">
+			<itunes:category text="Books"/></itunes:category>
+		<itunes:image href="https://substackcdn.com/feed/podcast/315961/24336eb9f3b78de1060cb878c18b176d.jpg"/>
+	</channel>
+	<item>
+		<item>
+			<title>Chapter 1</title>
+			<itunes:title>Chapter 1</itunes:title>
+			<itunes:episode>1</itunes:episode>
+			<itunes:description>In the heart of Texas, where the echoes of frontier justice still resonate beneath the vast, azure sky, Emily Jernigan grapples with a power that is as formidable as it is unsettling—the newly sanctified American right to exact legally sanctioned retribution. As an English teacher, she bears the burden of educating youth on the stark ramifications of such a law, while in the privacy of her own life, she is ensnared in the labyrinth of a moral quandary, where the lines of vengeance and justice blur. Through a landscape punctuated by the unyielding thrum of high school academia, the intimacy of marriage, and the spectral silence of a childhood wrought with memories, Emily navigates a path strewn with the gravitas of choice, the weight of untold secrets, and the plaintive yearning for a peace that seems as elusive as the whispering prairie winds.</itunes:description>
+			<enclosure url="https://github.com/zleach/rtr/raw/main/Chapter%201.mp3" length="16489382" type="audio/mpeg"/>
+			<guid>https://github.com/zleach/rtr/raw/main/Chapter%201.mp3</guid>
+			<pubDate>Sat, 06 Jan 2024 07:00:30 GMT</pubDate>
+			<itunes:duration>00:17:10</itunes:duration>
+		</item>
+	</item>
+</channel>undefined</rss>
