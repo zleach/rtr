@@ -71,7 +71,6 @@ const createPodcastXML = async () => {
       episodes.push({
         title: episodeTitle,
         "itunes:title": episodeTitle,
-        "itunes:episode": episodes.length + 1,
         description: `<![CDATA[${episodeDescription}]]>`,
         enclosure: {
           $: {
