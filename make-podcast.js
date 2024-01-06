@@ -1,13 +1,7 @@
 const fs = require("fs");
-const ffmpeg = require("fluent-ffmpeg");
 const path = require("path");
-
-// Function to sort files numerically based on chapter number
-const sortFilesNumerically = (a, b) => {
-  const numA = parseInt(a.match(/\d+/), 10);
-  const numB = parseInt(b.match(/\d+/), 10);
-  return numA - numB;
-};
+const ffmpeg = require("fluent-ffmpeg");
+const xml2js = require("xml2js");
 
 // Function to get the duration of an audio file
 const getFileDuration = (file) => {
@@ -17,64 +11,99 @@ const getFileDuration = (file) => {
         console.error(`Error getting duration for file ${file}:`, err);
         reject(err);
       } else {
-        const durationSec = metadata.format.duration;
-        const hours = Math.floor(durationSec / 3600);
-        const minutes = Math.floor((durationSec % 3600) / 60);
-        const seconds = Math.floor(durationSec % 60);
-        const formattedDuration = `${hours
-          .toString()
-          .padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds
-          .toString()
-          .padStart(2, "0")}`;
-        resolve(formattedDuration);
+        resolve(metadata.format.duration);
       }
     });
   });
 };
 
-// Function to create XML for podcast episodes
+// Function to format duration in HH:MM:SS
+const formatDuration = (duration) => {
+  const hours = Math.floor(duration / 3600);
+  const minutes = Math.floor((duration % 3600) / 60);
+  const seconds = Math.floor(duration % 60);
+  return [hours, minutes, seconds].map((v) => (v < 10 ? "0" + v : v)).join(":");
+};
+
+// Function to create podcast XML
 const createPodcastXML = async () => {
-  const inputFolder = ".";
-  const files = fs
-    .readdirSync(inputFolder)
-    .filter((file) => file.endsWith(".mp3"));
-  files.sort(sortFilesNumerically); // Sort files numerically
+  try {
+    const inputFolder = ".";
+    const podcastTitle = "Your Podcast Title"; // Change this to your podcast title
+    const podcastDescription = "Description of your podcast."; // Change this to your podcast description
+    const podcastLink = "http://yourpodcastlink.com"; // Change this to your podcast link
+    const podcastImageUrl = "http://linktoyourpodcastimage.jpg"; // Change this to your podcast image URL
 
-  let podcastItems = "";
+    let files = fs
+      .readdirSync(inputFolder)
+      .filter((file) => file.endsWith(".mp3")); // Adjust the extension as needed
+    files.sort((a, b) =>
+      a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" })
+    );
 
-  for (let index = 0; index < files.length; index++) {
-    const file = files[index];
-    const chapterNumber = index + 1;
-    const episodeTitle = `Chapter ${chapterNumber}`;
-    const pubDate = new Date(); // Placeholder date, you can adjust
-    pubDate.setDate(pubDate.getDate() + chapterNumber); // Increment date for each chapter
-    const duration = await getFileDuration(path.join(inputFolder, file));
+    let episodes = [];
 
-    podcastItems += `
-    <item>
-        <title><![CDATA[${episodeTitle}]]></title>
-        <description><![CDATA[${episodeTitle}]]></description>
-        <pubDate>${pubDate.toUTCString()}</pubDate>
-        <link>https://zachleach.substack.com/episode${chapterNumber}</link>
-        <guid isPermaLink="false">episode${chapterNumber}@zachleach.substack.com</guid>
-        <enclosure url="https://zachleach.substack.com/audio/episode${chapterNumber}.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
-        <itunes:duration>${duration}</itunes:duration>
-        <itunes:explicit>yes</itunes:explicit>
-        <itunes:episode>${chapterNumber}</itunes:episode>
-        <itunes:season>1</itunes:season>
-    </item>`;
+    for (let file of files) {
+      const filePath = path.join(inputFolder, file);
+      const fileSize = fs.statSync(filePath).size;
+      const duration = await getFileDuration(filePath);
+      const formattedDuration = formatDuration(duration);
+      const episodeTitle = file.replace(/\.[^/.]+$/, ""); // Use filename as title
+      const encodedFileName = encodeURIComponent(file);
+      const episodeUrl = `https://github.com/zleach/rtr/raw/main/${encodedFileName}`; // URL for each episode
+
+      const pubDate = new Date(); // Just a placeholder, modify as needed
+
+      episodes.push({
+        item: {
+          title: episodeTitle,
+          "itunes:title": episodeTitle,
+          "itunes:episode": episodes.length + 1,
+          enclosure: {
+            $: {
+              url: episodeUrl,
+              length: fileSize.toString(),
+              type: "audio/mpeg",
+            },
+          },
+          guid: episodeUrl,
+          pubDate: pubDate.toUTCString(),
+          "itunes:duration": formattedDuration,
+        },
+      });
+    }
+
+    const podcast = {
+      rss: {
+        $: {
+          "xmlns:itunes": "http://www.itunes.com/dtds/podcast-1.0.dtd",
+          version: "2.0",
+        },
+        channel: [
+          {
+            title: podcastTitle,
+            "itunes:title": podcastTitle,
+            description: podcastDescription,
+            link: podcastLink,
+            "itunes:image": {
+              $: {
+                href: podcastImageUrl,
+              },
+            },
+            item: episodes,
+          },
+        ],
+      },
+    };
+
+    const builder = new xml2js.Builder();
+    const xml = builder.buildObject(podcast);
+
+    fs.writeFileSync("podcast.xml", xml);
+    console.log("Podcast XML created successfully!");
+  } catch (error) {
+    console.error("Error creating podcast XML:", error);
   }
-
-  const podcastXML = `<?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
-  <channel>
-    <!-- Existing channel elements here -->
-    ${podcastItems}
-  </channel>
-</rss>`;
-
-  fs.writeFileSync("podcast.xml", podcastXML);
-  console.log("Podcast XML file created successfully.");
 };
 
 // Usage
