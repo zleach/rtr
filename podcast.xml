@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <!-- Existing channel elements here -->
+    
+    <item>
+        <title><![CDATA[Chapter 1]]></title>
+        <description><![CDATA[Chapter 1]]></description>
+        <pubDate>Sun, 07 Jan 2024 05:33:12 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode1</link>
+        <guid isPermaLink="false">episode1@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode1.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:17:10</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>1</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 2]]></title>
+        <description><![CDATA[Chapter 2]]></description>
+        <pubDate>Mon, 08 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode2</link>
+        <guid isPermaLink="false">episode2@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode2.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:07:16</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>2</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 3]]></title>
+        <description><![CDATA[Chapter 3]]></description>
+        <pubDate>Tue, 09 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode3</link>
+        <guid isPermaLink="false">episode3@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode3.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:09:44</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>3</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 4]]></title>
+        <description><![CDATA[Chapter 4]]></description>
+        <pubDate>Wed, 10 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode4</link>
+        <guid isPermaLink="false">episode4@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode4.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:06:27</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>4</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 5]]></title>
+        <description><![CDATA[Chapter 5]]></description>
+        <pubDate>Thu, 11 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode5</link>
+        <guid isPermaLink="false">episode5@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode5.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:04:41</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>5</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 6]]></title>
+        <description><![CDATA[Chapter 6]]></description>
+        <pubDate>Fri, 12 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode6</link>
+        <guid isPermaLink="false">episode6@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode6.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:12:38</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>6</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 7]]></title>
+        <description><![CDATA[Chapter 7]]></description>
+        <pubDate>Sat, 13 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode7</link>
+        <guid isPermaLink="false">episode7@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode7.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:07:51</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>7</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 8]]></title>
+        <description><![CDATA[Chapter 8]]></description>
+        <pubDate>Sun, 14 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode8</link>
+        <guid isPermaLink="false">episode8@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode8.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:09:07</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>8</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 9]]></title>
+        <description><![CDATA[Chapter 9]]></description>
+        <pubDate>Mon, 15 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode9</link>
+        <guid isPermaLink="false">episode9@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode9.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:15:19</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>9</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 10]]></title>
+        <description><![CDATA[Chapter 10]]></description>
+        <pubDate>Tue, 16 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode10</link>
+        <guid isPermaLink="false">episode10@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode10.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:12:18</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>10</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 11]]></title>
+        <description><![CDATA[Chapter 11]]></description>
+        <pubDate>Wed, 17 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode11</link>
+        <guid isPermaLink="false">episode11@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode11.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:17:27</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>11</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 12]]></title>
+        <description><![CDATA[Chapter 12]]></description>
+        <pubDate>Thu, 18 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode12</link>
+        <guid isPermaLink="false">episode12@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode12.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:13:50</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>12</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 13]]></title>
+        <description><![CDATA[Chapter 13]]></description>
+        <pubDate>Fri, 19 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode13</link>
+        <guid isPermaLink="false">episode13@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode13.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:19:07</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>13</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 14]]></title>
+        <description><![CDATA[Chapter 14]]></description>
+        <pubDate>Sat, 20 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode14</link>
+        <guid isPermaLink="false">episode14@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode14.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:15:13</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>14</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 15]]></title>
+        <description><![CDATA[Chapter 15]]></description>
+        <pubDate>Sun, 21 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode15</link>
+        <guid isPermaLink="false">episode15@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode15.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:14:53</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>15</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 16]]></title>
+        <description><![CDATA[Chapter 16]]></description>
+        <pubDate>Mon, 22 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode16</link>
+        <guid isPermaLink="false">episode16@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode16.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:08:41</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>16</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 17]]></title>
+        <description><![CDATA[Chapter 17]]></description>
+        <pubDate>Tue, 23 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode17</link>
+        <guid isPermaLink="false">episode17@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode17.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:10:01</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>17</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 18]]></title>
+        <description><![CDATA[Chapter 18]]></description>
+        <pubDate>Wed, 24 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode18</link>
+        <guid isPermaLink="false">episode18@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode18.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:19:50</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>18</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 19]]></title>
+        <description><![CDATA[Chapter 19]]></description>
+        <pubDate>Thu, 25 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode19</link>
+        <guid isPermaLink="false">episode19@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode19.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:18:33</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>19</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 20]]></title>
+        <description><![CDATA[Chapter 20]]></description>
+        <pubDate>Fri, 26 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode20</link>
+        <guid isPermaLink="false">episode20@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode20.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:17:59</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>20</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 21]]></title>
+        <description><![CDATA[Chapter 21]]></description>
+        <pubDate>Sat, 27 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode21</link>
+        <guid isPermaLink="false">episode21@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode21.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:15:07</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>21</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 22]]></title>
+        <description><![CDATA[Chapter 22]]></description>
+        <pubDate>Sun, 28 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode22</link>
+        <guid isPermaLink="false">episode22@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode22.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:20:37</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>22</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 23]]></title>
+        <description><![CDATA[Chapter 23]]></description>
+        <pubDate>Mon, 29 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode23</link>
+        <guid isPermaLink="false">episode23@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode23.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:18:07</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>23</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 24]]></title>
+        <description><![CDATA[Chapter 24]]></description>
+        <pubDate>Tue, 30 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode24</link>
+        <guid isPermaLink="false">episode24@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode24.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:22:02</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>24</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 25]]></title>
+        <description><![CDATA[Chapter 25]]></description>
+        <pubDate>Wed, 31 Jan 2024 05:33:13 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode25</link>
+        <guid isPermaLink="false">episode25@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode25.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:19:25</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>25</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 26]]></title>
+        <description><![CDATA[Chapter 26]]></description>
+        <pubDate>Thu, 01 Feb 2024 05:33:14 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode26</link>
+        <guid isPermaLink="false">episode26@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode26.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:15:18</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>26</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 27]]></title>
+        <description><![CDATA[Chapter 27]]></description>
+        <pubDate>Fri, 02 Feb 2024 05:33:14 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode27</link>
+        <guid isPermaLink="false">episode27@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode27.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:26:08</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>27</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 28]]></title>
+        <description><![CDATA[Chapter 28]]></description>
+        <pubDate>Sat, 03 Feb 2024 05:33:14 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode28</link>
+        <guid isPermaLink="false">episode28@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode28.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:20:30</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>28</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 29]]></title>
+        <description><![CDATA[Chapter 29]]></description>
+        <pubDate>Sun, 04 Feb 2024 05:33:14 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode29</link>
+        <guid isPermaLink="false">episode29@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode29.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:14:28</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>29</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 30]]></title>
+        <description><![CDATA[Chapter 30]]></description>
+        <pubDate>Mon, 05 Feb 2024 05:33:14 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode30</link>
+        <guid isPermaLink="false">episode30@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode30.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:13:16</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>30</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 31]]></title>
+        <description><![CDATA[Chapter 31]]></description>
+        <pubDate>Tue, 06 Feb 2024 05:33:14 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode31</link>
+        <guid isPermaLink="false">episode31@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode31.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:23:22</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>31</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 32]]></title>
+        <description><![CDATA[Chapter 32]]></description>
+        <pubDate>Wed, 07 Feb 2024 05:33:14 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode32</link>
+        <guid isPermaLink="false">episode32@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode32.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:14:16</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>32</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+    <item>
+        <title><![CDATA[Chapter 33]]></title>
+        <description><![CDATA[Chapter 33]]></description>
+        <pubDate>Thu, 08 Feb 2024 05:33:14 GMT</pubDate>
+        <link>https://zachleach.substack.com/episode33</link>
+        <guid isPermaLink="false">episode33@zachleach.substack.com</guid>
+        <enclosure url="https://zachleach.substack.com/audio/episode33.mp3" type="audio/mpeg" length="12345678"/> <!-- Adjust length -->
+        <itunes:duration>00:09:07</itunes:duration>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:episode>33</itunes:episode>
+        <itunes:season>1</itunes:season>
+    </item>
+  </channel>
+</rss>
