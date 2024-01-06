@@ -45,9 +45,11 @@ const createPodcastXML = async () => {
     let files = fs
       .readdirSync(inputFolder)
       .filter((file) => file.endsWith(".mp3")); // Adjust the extension as needed
-    files.sort((a, b) =>
-      a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" })
-    );
+    files
+      .sort((a, b) =>
+        a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" })
+      )
+      .reverse();
 
     let episodes = [];
 
